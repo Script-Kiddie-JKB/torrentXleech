@@ -1,25 +1,17 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+# (c) Shrimadhav U K
+
 import logging
 
 import pyrogram
 from tobrot import AUTH_CHANNEL, LOGGER
 
-from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton
-
 
 async def new_join_f(client, message):
     chat_type = message.chat.type
     if chat_type != "private":
-        await message.reply_text(
-            """<b>🙋🏻‍♂️ Hello dear!\n\n Welcome to Leech Group</b>\n\n<b>Current CHAT ID: <code>{message.chat.id}</code>""",
-            parse_mode="html",
-            reply_markup=InlineKeyboardMarkup(
-                [
-                    [
-                        InlineKeyboardButton('Channel', url='https://t.me/premiumcoursesdrive')
-                    ]
-                ]
-               )
-            )
+        await message.reply_text(f"Current CHAT ID: <code>{message.chat.id}</code>")
         # leave chat
         await client.leave_chat(chat_id=message.chat.id, delete=True)
     # delete all other messages, except for AUTH_CHANNEL
@@ -32,4 +24,7 @@ async def help_message_f(client, message):
     # message_id = 99
     # display the /help
 
-    
+    await message.reply_text(
+        """For any help or Support contact any Admins \n\n And Don't Forget To Join [@PremiumCoursesDrivee] 😉 </a>""",
+        disable_web_page_preview=True,
+    )
