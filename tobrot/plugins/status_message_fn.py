@@ -74,14 +74,14 @@ async def status_message_f(client, message):
 
     hr, mi, se = up_time(time.time() - BOT_START_TIME)
     total, used, free = shutil.disk_usage(".")
-   
+    total = humanbytes(total)
+    used = humanbytes(used)
     free = humanbytes(free)
 
     ms_g = (
-        f"<b>Bot Uptime</b>: <code>{hr} : {mi} : {se}</code>\n"
-        f"<b>Total disk space</b>: <code>{total}</code>\n"
-        f"<b>Used</b>: <code>{used}</code>\n"
-        f"<b>Free</b>: <code>{free}</code>\n"
+        f"<b>Bot Uptime ⌚</b>: <code>{hr} : {mi} : {se}</code>\n"
+        
+        f"<b>Free 🤯</b>: <code>{free}</code>\n"
     )
     # LOGGER.info(ms_g)
 
