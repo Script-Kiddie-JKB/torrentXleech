@@ -9,8 +9,8 @@ ran=$(cat /dev/urandom | tr -dc 'a-zA-Z0-9' | fold -w 12 | head -n 1)
 echo "Update tracker $TRACKER"
 echo "bt-tracker=$TRACKER" >> /app/aria2.conf
 
-echo "Update peer-id-prefix=-qB4250-$ran"
-echo "peer-id-prefix=-qB4250-$ran" >> /app/aria2.conf
+echo "Update peer-id-prefix=-qB4350-$ran"
+echo "peer-id-prefix=-qB4350-$ran" >> /app/aria2.conf
 
 
 if [[ -n $RCLONE_CONFIG ]]; then
