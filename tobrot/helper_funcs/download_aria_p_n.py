@@ -271,7 +271,7 @@ async def call_apropriate_function(
                     )
                     message_to_send = mention_req_user + message_to_send
                     message_to_send = message_to_send + "\n\n" + "⭐#uploads⛳ <b>💫 Powered By : @PremiumCoursesDrivee</b>"
- Python"
+
                 else:
                     message_to_send = "<i>🔴𝙁𝘼𝙄𝙇𝙀𝘿</i> 𝙩𝙤 𝙪𝙥𝙡𝙤𝙖𝙙 𝙛𝙞𝙡𝙚𝙨😞"
                 await user_message.reply_text(
