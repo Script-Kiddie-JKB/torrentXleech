@@ -74,8 +74,7 @@ async def status_message_f(client, message):
 
     hr, mi, se = up_time(time.time() - BOT_START_TIME)
     total, used, free = shutil.disk_usage(".")
-    total = humanbytes(total)
-    used = humanbytes(used)
+   
     free = humanbytes(free)
 
     ms_g = (
