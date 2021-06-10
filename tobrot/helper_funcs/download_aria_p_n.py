@@ -43,7 +43,7 @@ async def aria_start():
     aria2_daemon_start_cmd = []
     # start the daemon, aria2c command
     aria2_daemon_start_cmd.append("aria2c")
-    aria2_daemon_start_cmd.append("--conf-path=/app/aria2.conf")
+    aria2_daemon_start_cmd.append("--conf-path=/app/tobrot/aria2/aria2.conf")
     aria2_daemon_start_cmd.append("--allow-overwrite=true")
     aria2_daemon_start_cmd.append("--daemon=true")
     # aria2_daemon_start_cmd.append(f"--dir={DOWNLOAD_LOCATION}")
@@ -270,8 +270,7 @@ async def call_apropriate_function(
                         f"<a href='tg://user?id={user_id}'>🟢𝙔𝙤𝙪𝙧 𝙍𝙚𝙦𝙪𝙚𝙨𝙩𝙚𝙙 𝙁𝙞𝙡𝙚𝙨 𝙝𝙖𝙫𝙚 𝙗𝙚𝙚𝙣 𝙪𝙥𝙡𝙤𝙖𝙙𝙚𝙙 𝙩𝙤 𝙏𝙚𝙡𝙚𝙜𝙧𝙖𝙢 𝙨𝙪𝙘𝙘𝙚𝙨𝙨𝙛𝙪𝙡𝙡𝙮 𝙥𝙡𝙨 𝙘𝙝𝙚𝙘𝙠 𝙩𝙝𝙚𝙢 𝙗𝙚𝙡𝙤𝙬👇</a>\n\n"
                     )
                     message_to_send = mention_req_user + message_to_send
-                    message_to_send = message_to_send + "\n\n" + "⭐#uploads⛳ <b>💫 Powered By : @PremiumCoursesDrivee</b>"
-
+                    message_to_send = message_to_send + "\n\n" + "⭐#uploads⛳\n\n <b>💫 Powered By : @PremiumCoursesDrivee</b>"
                 else:
                     message_to_send = "<i>🔴𝙁𝘼𝙄𝙇𝙀𝘿</i> 𝙩𝙤 𝙪𝙥𝙡𝙤𝙖𝙙 𝙛𝙞𝙡𝙚𝙨😞"
                 await user_message.reply_text(
