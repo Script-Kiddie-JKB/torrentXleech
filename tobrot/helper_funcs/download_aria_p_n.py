@@ -325,7 +325,7 @@ async def check_progress_for_dl(aria2, gid, event, previous_message):
                 msg += f"\n<b>│</b>"
                 msg += f"\n<b>├  📋 𝙂𝙞𝘿:</b> <code>{gid}</code>"
                 msg += f"\n<b>│</b>"
-                msg += f"\n<b>╰──「 🚒 Using Engine:-Aria2 」</b>"
+                msg += f"\n<b>╰──「 🤝 Join : @PremiumCoursesDrivee 」</b>"
                 inline_keyboard = []
                 ikeyboard = []
                 ikeyboard.append(
