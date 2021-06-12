@@ -308,14 +308,24 @@ async def check_progress_for_dl(aria2, gid, event, previous_message):
                 if is_file is None:
                     msgg = f"🔌𝘾𝙤𝙣𝙣𝙚𝙘𝙩𝙞𝙤𝙣'𝙨: <b>{file.connections}</b>"
                 else:
-                    msgg = f"ℹ𝙄𝙉𝙁𝙊: <b>[🟢𝙎𝙚𝙚𝙙𝙨: <b>{file.num_seeders}</b>|🔴𝙋𝙚𝙚𝙧𝙨: <b>{file.connections}</b>]</b>"
-                msg = f"\n🗃️𝙁𝙞𝙡𝙚𝙣𝙖𝙢𝙚: <code>{downloading_dir_name}</code>"    
-                msg += f"\n🗂️𝙏𝙤𝙩𝙖𝙡 𝙁𝙞𝙡𝙚 𝙎𝙞𝙯𝙚: <b>{file.total_length_string()}</b>"
-                msg += f"\n🌠𝙋𝙧𝙤𝙜𝙧𝙚𝙨𝙨: <b>{file.progress_string()}</b>"
-                msg += f"\n⏰𝙀𝙏𝘼: <b>{file.eta_string()}</b>"
-                msg += f"\n{msgg}"
-                msg += f"\n⚡𝙨𝙥𝙚𝙚𝙙: <b>{file.download_speed_string()}</b>"
-                msg += f"\n📋𝙂𝙞𝘿: <code>{gid}</code>"
+                    msgg = f"<b>[🟢𝙎: {file.num_seeders}|🔴𝙋: {file.connections}]</b>"
+                msg += f"\n<b>╭──「  ⏬ 𝘿𝙊𝙒𝙉𝙇𝙊𝘼𝘿𝙄𝙉𝙂 ⏬  」</b>"
+                msg += f"\n<b>│</b>"
+                msg += f"\n<b>├</b> <code>{downloading_dir_name}</code>"
+                msg += f"\n<b>│</b>" 
+                msg += f"\n<b>├  📦 𝙏𝙤𝙩𝙖𝙡 𝙁𝙞𝙡𝙚 𝙎𝙞𝙯𝙚: {file.total_length_string()}</b>"
+                msg += f"\n<b>│</b>"
+                msg += f"\n<b>├  🔄 𝙋𝙧𝙤𝙜𝙧𝙚𝙨𝙨: {file.progress_string()}</b>"
+                msg += f"\n<b>│</b>"
+                msg += f"\n<b>├  ⏰ 𝙀𝙏𝘼: {file.eta_string()}</b>"
+                msg += f"\n<b>│</b>"
+                msg += f"\n<b>├  {msgg}</b>" 
+                msg += f"\n<b>│</b>"
+                msg += f"\n<b>├  ⚡️ 𝙨𝙥𝙚𝙚𝙙: {file.download_speed_string()}</b>" 
+                msg += f"\n<b>│</b>"
+                msg += f"\n<b>├  📋 𝙂𝙞𝘿:</b> <code>{gid}</code>"
+                msg += f"\n<b>│</b>"
+                msg += f"\n<b>╰──「 🚒 Using Engine:-Aria2 」</b>"
                 inline_keyboard = []
                 ikeyboard = []
                 ikeyboard.append(
