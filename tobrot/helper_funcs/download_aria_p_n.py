@@ -11,6 +11,7 @@ import re
 from re import search
 import subprocess
 import hashlib
+import math
 
 import aria2p
 from pyrogram.errors import FloodWait, MessageNotModified
