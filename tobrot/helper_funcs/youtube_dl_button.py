@@ -149,7 +149,7 @@ async def youtube_dl_call_back(bot, update):
     t_response = stdout.decode().strip()
     # LOGGER.info(e_response)
     # LOGGER.info(t_response)
-    ad_string_to_replace = "report to https://github.com/yt-dlp/yt-dlp :)"
+    ad_string_to_replace = "please report this issue on https://github.com/yt-dlp/yt-dlp ."
     if e_response and ad_string_to_replace in e_response:
         error_message = e_response.replace(ad_string_to_replace, "")
         await update.message.edit_caption(caption=error_message)
