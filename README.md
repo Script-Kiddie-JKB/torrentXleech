@@ -21,6 +21,8 @@
 
 <p align="center"> <a href="https://t.me/XcodersHub" target="_blank"> <img src="https://shields.io/badge/Support--Group-Join_Now-navy?logo=&style=for-the-badge" alt="support group" width="400" height="45"/>
 
+  [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://dashboard.heroku.com/new?template=https://github.com/Script-Kiddie-JKB/torrentXleech/master) 
+    
 ---
 
 ### Dont Abuse The Repo ... this is intented to run in Small Places or For Short time 😐
